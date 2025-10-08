@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andrea Bovi — CVs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ide">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo-dot"></span>
+        <span class="brand-name">IntelliJ-style</span>
+      </div>
+      <div class="editor-tabs" role="tablist" aria-label="CV tabs">
+        <button class="tab active" role="tab" aria-selected="true" data-lang="en">CV — EN</button>
+        <button class="tab" role="tab" aria-selected="false" data-lang="ita">CV — ITA</button>
+      </div>
+      <div class="actions">
+        <button id="downloadMdBtn" class="btn primary" title="Download current CV as Markdown">Download .md</button>
+        <button id="savePdfBtn" class="btn" title="Save this page as PDF">Save as PDF</button>
+      </div>
+    </header>
+
+    <div class="body">
+      <aside class="sidebar" aria-label="Project">
+        <div class="tool-window-title">Project</div>
+        <ul class="tree">
+          <li class="folder open">CV
+            <ul>
+              <li class="file" data-open="en">Andrea Bovi CV - EN.md</li>
+              <li class="file" data-open="ita">Andrea Bovi CV - ITA.md</li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="editor" role="main">
+        <div class="editor-header">
+          <span class="file-tab active" data-lang="en">Andrea Bovi CV - EN.md</span>
+          <span class="file-tab" data-lang="ita">Andrea Bovi CV - ITA.md</span>
+        </div>
+        <div class="viewer">
+          <pre id="cvCode" class="code-view" aria-label="CV markdown (raw)"></pre>
+          <div id="cvRendered" class="rendered-view" aria-label="CV rendered markdown" role="document"></div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <noscript>
+    JavaScript is required to switch between CVs and to download. You can still open the files directly:
+    <a href="Andrea Bovi CV - EN.md">EN</a> | <a href="Andrea Bovi CV - ITA.md">ITA</a>.
+  </noscript>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
