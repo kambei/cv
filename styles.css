@@ -135,3 +135,14 @@ body{
   body, .ide, .body, .editor, .viewer{ height: auto; }
   .topbar{ display: none !important; }
 }
+
+/* Click-to-reveal styling */
+.click-to-reveal{
+  background: transparent;
+  border: 0;
+  color: var(--accent);
+  text-decoration: underline dotted;
+  padding: 0 2px;
+  cursor: pointer;
+}
+.click-to-reveal:hover{ color: #82b1ff; }

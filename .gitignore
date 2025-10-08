@@ -1,0 +1,43 @@
+# General OS junk
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Node / front-end dependencies and caches (in case tooling is added later)
+node_modules/
+.bazel-cache/
+.parcel-cache/
+.cache/
+
+# Build outputs
+build/
+dist/
+.out/
+.tmp/
+
+# Coverage / reports
+coverage/
+
+# Environment files
+.env
+.env.*
+
+# Archives and exports
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Local exports (e.g., printed CVs)
+*.pdf
